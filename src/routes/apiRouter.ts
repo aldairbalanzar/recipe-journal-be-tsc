@@ -1,5 +1,5 @@
-
-const router = require('express').Router();
+import { Router } from 'express';
+const router = Router()
 // const authRouter = require('./authRouter');
 // const authenticator = require('../middleware/authenticator');
 // const usersRouter = require('./usersRouter');

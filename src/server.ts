@@ -7,7 +7,7 @@ const apiRouter = require('./routes/apiRouter');
 // const cors = require('cors');
 const helmet = require('helmet');
 const fileupload = require('express-fileupload');
-const accessControl = require('./middleware/access_control_middleware');
+const accessControl = require('./utils/accessControl');
 
 server.use(fileupload({ useTempFiles: true }));
 server.use(helmet());
@@ -22,4 +22,4 @@ server.get('/', (req, res) => {
 // routes all requests to appropriate endpoints
 server.use('/api', apiRouter);
 
-module.exports = server;
+export default  server;

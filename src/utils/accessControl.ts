@@ -1,4 +1,4 @@
-import { NextFunction, Request, Response } from "express";
+import { Request, Response, NextFunction } from "express";
 
 function access_control_middleware(req: Request, res: Response , next: NextFunction) {
     res.header("Access-Control-Allow-Origin",  '*');

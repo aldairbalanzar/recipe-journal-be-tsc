@@ -2,8 +2,8 @@ import { Router } from 'express';
 const router = Router()
 const authRouter = require('./authRouter');
 // const authenticator = require('../middleware/authenticator');
-// const usersRouter = require('./usersRouter');
-// const recipesRouter = require('./recipesRouter');
+const usersRouter = require('./usersRouter');
+const recipesRouter = require('./recipesRouter');
 
 // GET to check if router is working
 router.get('/', (req, res) => {
